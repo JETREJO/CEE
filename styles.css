@@ -125,18 +125,18 @@ body, html {
         background-color: rgb(165, 213, 255);
         cursor: pointer;
     }
- }
+}
 
- @media (width < 600px) {
+@media (width < 600px) {
     .menu-btn {
         right: 0px;
     }
     .hero-image {
         min-width: 500px;
     }
- }
+}
 
- @media (width >= 900px) {
+@media (width >= 900px) {
     .menu-btn {
         opacity: 0;
         position: fixed;
@@ -146,7 +146,7 @@ body, html {
     .header-active {
         height: 70px !important;
     }
- }
+}
 
 /* ----------------- SECCION 1 ----------------- */
 
@@ -162,6 +162,7 @@ body, html {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 500px;
 }
 
 .hero-opacity {
@@ -180,7 +181,7 @@ body, html {
     justify-content: center;
 }
 
-#section-1 {
+#inicio {
     height: 77vh;
     display: flex;
     align-items: center;
@@ -216,19 +217,19 @@ body, html {
     transform: scale(1.1);
 }
 
+/* ----------------- SECCION 2 ----------------- */
+
 #section-2 {
-    height: calc(100vh - 70px);
+    height: 75vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* border: 5px solid orange; */
+    min-width: 500px;
 }
 
 .section-title {
     font-size: 45px;
 }
-
-/* .section-2-item {
-    border: 3px solid blue;
-} */
 
 #section-2-img {
     /* border: 2px solid orange; */
@@ -241,7 +242,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #section-2-text-container {
@@ -251,15 +251,28 @@ body, html {
     align-items: center;
 }
 
-/* #section-2-text-container > div {
-    border: 3px solid black;
-} */
-
 .section-2-text {
     font-size: 16px;
     color: #262626;
     line-height: 27px;
 }
+
+@media (width < 700px) {
+    #section-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+        height: auto;
+    }
+    #section-2-text-container {
+        width: auto;
+        padding: 30px 50px;
+    }
+    #section-2-image-container {
+        height: fit-content;
+    }
+}
+
+/* ----------------- SECCION 3 ----------------- */
 
 #section-3 {
     display: flex;
