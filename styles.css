@@ -9,6 +9,10 @@ body, html {
     box-sizing: inherit;
 }
 
+:root {
+    --HERO-IMG-01: url('./src/photos/HERO-01.jpeg');
+}
+
 .montserrat-light {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -39,6 +43,7 @@ body, html {
     justify-content: space-evenly;
     position: sticky;
     top: 0px;
+    z-index: 999;
 }
 
 .hero-image > img {
@@ -148,7 +153,25 @@ body, html {
 .section-container {
     width: 100%;
     height: fit-content;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.s1-img-container {
+    background-image: var(--HERO-IMG-01);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-opacity {
+    background-color: #00000080;
+    /* backdrop-filter: blur(2px); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .child-box-centered {
@@ -158,34 +181,38 @@ body, html {
 }
 
 #section-1 {
-    height: 75vh;
+    height: 77vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .subscribe-box {
-    width: 700px;
+    width: 100%;
     height: 220px;
-    background-color: rgba(231, 231, 109, 0.479);
+    background-color: rgba(12, 30, 17, 0.3);
+    backdrop-filter: blur(6px);
     transition: 300ms ease;
     flex-direction: column;
+    text-align: center;
+    color: white;
 }
 
-.subscribe-box:hover {
-    cursor: pointer;
-    -webkit-box-shadow: 16px 18px 16px -15px rgba(0,0,0,1);
-    -moz-box-shadow: 16px 18px 16px -15px rgba(0,0,0,1);
-    box-shadow: 16px 18px 16px -15px rgba(0,0,0,1);
+.subscribe-box > p {
+    font-size: 18px;
 }
 
 .subscribe-box > div {
-    margin-top: 50px;
+    margin-top: 30px;
     transition: 150ms ease;
+    cursor: pointer;
+    padding: 15px 30px;
+    border: 2px solid #CCC;
+    border-radius: 5rem;
+    font-size: 16px;
 }
 
 .subscribe-box > div:hover {
-    color: rgb(255, 136, 0);
     transform: scale(1.1);
 }
 
