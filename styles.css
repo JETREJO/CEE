@@ -106,6 +106,7 @@ body, html {
     }
     .menu {
         opacity: 0;
+        z-index: -10;
         background-color: aliceblue;
         position: absolute;
         top: 70px;
@@ -278,6 +279,7 @@ body, html {
     display: flex;
     flex-direction: column;
     /* border: 3px solid black; */
+    min-width: 500px;
 }
 
 #section-3-text-container {
@@ -327,7 +329,7 @@ body, html {
     height: fit-content;
     border-radius: 0% 0% 3rem 3rem;
     background-color: #F6F7FC;
-    transition: 300ms;
+    transition: transform 300ms;
 }
 
 .puzzle-card:hover {
@@ -348,4 +350,47 @@ body, html {
     font-size: 16px;
     line-height: 60px;
     text-align: center;
+}
+
+@media (width < 1200px) {
+    .puzzle-card > img {
+        width: 200px;
+    }
+    .puzzle-card {
+        width: 200px;
+        height: 260px;
+    }
+    .puzzle-card > p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #section-3-puzzle-container {
+        padding: 0px 20px;
+    }
+}
+
+@media (width < 700px) {
+    #section-3-puzzle-container {
+        padding: 0px 50px;
+        /* border: 1px solid red; */
+        flex-direction: column;
+        gap: 30px; 
+    }
+    .puzzle-card {
+        width: 100%;
+        height: fit-content;
+        border-radius: 0% 3rem 3rem 0%;
+        display: flex;
+        align-items: center;
+    }
+    .puzzle-card > img {
+        width: 150px;
+    }
+    .puzzle-card > p {
+        font-size: 24px;
+        line-height: 20px;
+        height: fit-content;
+        width: fit-content;
+        text-align: left;
+    }
 }
