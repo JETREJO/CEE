@@ -329,12 +329,15 @@ body, html {
     height: fit-content;
     border-radius: 0% 0% 3rem 3rem;
     background-color: #F6F7FC;
-    transition: transform 300ms;
+    transition: 300ms;
 }
 
 .puzzle-card:hover {
     transform: scale(1.06);
     cursor: pointer;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(9, 30, 70, 0.3);
 }
 
 .puzzle-card > img {
