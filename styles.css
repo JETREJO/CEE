@@ -292,11 +292,19 @@ body, html {
 }
 
 .section-3-description {
-    background-color: rgba(255, 166, 0, 0.664);
+    background-color: rgba(255, 166, 0, 0.5);
     width: auto;
     padding: 60px 50vw 60px 10vw;
     line-height: 29px;
     text-align: left;
+}
+
+.section-3-description-2 {
+    background-color: #a8a8a888;
+    width: auto;
+    padding: 60px 10vw 60px 50vw;
+    line-height: 29px;
+    text-align: right;
 }
 
 .section-3-subtitle {
@@ -335,9 +343,9 @@ body, html {
 .puzzle-card:hover {
     transform: scale(1.06);
     cursor: pointer;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 1px 1px 5px 1px rgba(9, 30, 70, 0.3);
+    box-shadow:         4px 6px 5px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 4px 6px 5px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:    4px 6px 5px 1px rgba(9, 30, 70, 0.3);
 }
 
 .puzzle-card > img {
@@ -396,4 +404,71 @@ body, html {
         width: fit-content;
         text-align: left;
     }
+}
+
+/* ----------------- SECCION 4 ----------------- */
+
+#section-4 {
+    margin-top: 100px;
+}
+
+#section-4 > h3 {
+    text-align: center;
+    font-size: 36px;
+    margin: 50px 0px;
+}
+
+#section-4 > p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 16px 20vw;
+}
+
+.mods-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 15vw 120px 15vw;
+}
+
+.modality-card {
+    width: 300px;
+    /* height: 180px; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+.modality-img {
+    /* background-color: orange; */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0% 0%;
+}
+
+.modality-img > img {
+    width: 100px;
+}
+
+.modality-card  > p {
+    margin: 0px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 28px;
+    border-radius: 0% 0% 30px 30px;
+    padding-bottom: 15px;
+}
+
+.mcard-1 {
+    background-color: #FF5C5C;
+}
+
+.mcard-2 {
+    background-color: #A8A8A8;
+}
+
+.mcard-3 {
+    background-color: #FFBD4A;
 }
