@@ -167,7 +167,7 @@ body, html {
 }
 
 .hero-opacity {
-    background-color: #00000080;
+    background-color: #000000AB;
     /* backdrop-filter: blur(2px); */
     width: 100%;
     height: 100%;
@@ -192,8 +192,8 @@ body, html {
 .subscribe-box {
     width: 100%;
     height: 220px;
-    background-color: rgba(12, 30, 17, 0.3);
-    backdrop-filter: blur(6px);
+    /* background-color: rgba(12, 30, 17, 0.3); */
+    /* backdrop-filter: blur(6px); */
     transition: 300ms ease;
     flex-direction: column;
     text-align: center;
@@ -201,7 +201,11 @@ body, html {
 }
 
 .subscribe-box > p {
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+    padding: 0px 15vw;
+    letter-spacing: 1px;
 }
 
 .subscribe-box > div {
@@ -216,6 +220,8 @@ body, html {
 
 .subscribe-box > div:hover {
     transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
 }
 
 /* ----------------- SECCION 2 ----------------- */
@@ -566,3 +572,6 @@ body, html {
         text-align: center;
     }
 }
+
+/* ----------------- SECCION 6 ----------------- */
+
