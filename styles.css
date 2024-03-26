@@ -579,6 +579,7 @@ body, html {
     text-align: center;
     font-size: 36px;
     margin: 100px 0px 70px 0;
+    min-width: 500px;
 }
 
 .s6-description {
@@ -594,6 +595,7 @@ body, html {
     position: relative;
     margin: auto;
     margin-bottom: 100px;
+    min-width: 500px;
 }
   
 .mySlides {
@@ -646,3 +648,24 @@ body, html {
 @media (width < 700px) {
     .s6-description { padding: 0px 10vw; }
 }
+
+/* ----------------- FOOTER ----------------- */
+
+footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 500px;
+}
+
+footer > p {
+    text-align: center;
+}
+
+.hypertext {
+    color: rgb(0, 183, 255);
+}
+
