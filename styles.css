@@ -593,6 +593,7 @@ body, html {
     max-width: 800px;
     position: relative;
     margin: auto;
+    margin-bottom: 100px;
 }
   
 .mySlides {
@@ -635,4 +636,13 @@ body, html {
   
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (width < 1050px) {
+    .prev { left: 0px; }  
+    .next { right: 0px; }
+}
+
+@media (width < 700px) {
+    .s6-description { padding: 0px 10vw; }
 }
