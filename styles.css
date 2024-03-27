@@ -58,7 +58,7 @@ body, html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 .menu > a {
@@ -135,7 +135,7 @@ body, html {
         right: 0px;
     }
     .hero-image {
-        min-width: 500px;
+        min-width: 300px;
     }
 }
 
@@ -165,7 +165,7 @@ body, html {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 .hero-opacity {
@@ -226,6 +226,20 @@ body, html {
     backdrop-filter: blur(4px);
 }
 
+@media (width < 800px) {
+    .subscribe-box > p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media (width < 500px) {
+    .subscribe-box > p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
 /* ----------------- SECCION 2 ----------------- */
 
 #section-2 {
@@ -233,7 +247,7 @@ body, html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* border: 5px solid orange; */
-    min-width: 500px;
+    min-width: 300px;
 }
 
 .section-title {
@@ -279,6 +293,15 @@ body, html {
     #section-2-image-container {
         height: fit-content;
     }
+    #section-2-img {
+        padding: 100px 50px 50px 50px;
+    }
+}
+
+@media (width < 500px) {
+    #section-2-img {
+        padding: 100px 0px 50px 0px;
+    }
 }
 
 /* ----------------- SECCION 3 ----------------- */
@@ -287,7 +310,7 @@ body, html {
     display: flex;
     flex-direction: column;
     /* border: 3px solid black; */
-    min-width: 500px;
+    min-width: 300px;
 }
 
 #section-3-text-container {
@@ -402,10 +425,11 @@ body, html {
         align-items: center;
     }
     .puzzle-card > img {
-        width: 150px;
+        width: 120px;
+        margin-right: 20px;
     }
     .puzzle-card > p {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 20px;
         height: fit-content;
         width: fit-content;
@@ -428,11 +452,34 @@ body, html {
     }
 }
 
+@media (width < 500px) {
+    .puzzle-card > p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #section-3-puzzle-container {
+        padding: 0px 20px;
+    }
+    .section-3-subtitle > p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .puzzle-card > img {
+        width: 90px;
+    }
+}
+
+@media (width < 400px) {
+    .puzzle-card > p {
+        font-size: 17px;
+    }
+}
+
 /* ----------------- SECCION 4 ----------------- */
 
 #section-4 {
     margin-top: 100px;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 #section-4 > h3 {
@@ -524,6 +571,15 @@ body, html {
     }
 }
 
+@media (width < 500px) {
+    .modality-img > img {
+        width: 60px;
+    }
+    .modality-card  > p {
+        font-size: 14px;
+    }
+}
+
 /* ----------------- SECCION 5 ----------------- */
 
 .section-networks {
@@ -532,7 +588,7 @@ body, html {
     color: rgb(53, 53, 53);
     display: flex;
     justify-content: center;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 .section-networks > div {
@@ -575,13 +631,20 @@ body, html {
     }
 }
 
+@media (width < 500px) {
+    .section-networks > div > p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
 /* ----------------- SECCION 6 ----------------- */
 
 .s6-title {
     text-align: center;
     font-size: 36px;
     margin: 100px 0px 70px 0;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 .s6-description {
@@ -597,7 +660,7 @@ body, html {
     position: relative;
     margin: auto;
     margin-bottom: 100px;
-    min-width: 500px;
+    min-width: 300px;
 }
   
 .mySlides {
@@ -660,7 +723,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 footer > p {
@@ -671,3 +734,8 @@ footer > p {
     color: rgb(0, 183, 255);
 }
 
+@media (width < 700px) {
+    footer > p {
+        font-size: 12px;
+    }
+}
