@@ -252,6 +252,7 @@ body, html {
 
 .section-title {
     font-size: 45px;
+    color: rgb(53, 53, 53);
 }
 
 #section-2-img {
@@ -269,7 +270,7 @@ body, html {
 
 #section-2-text-container {
     /* border: 4px solid orange; */
-    width: 80%;
+    width: 65%;
     display: grid;
     align-items: center;
 }
@@ -325,7 +326,7 @@ body, html {
 .section-3-description {
     background-color: rgba(255, 166, 0, 0.5);
     width: auto;
-    padding: 60px 50vw 60px 10vw;
+    padding: 60px 50vw 60px 15vw;
     line-height: 29px;
     text-align: left;
 }
@@ -333,7 +334,7 @@ body, html {
 .section-3-description-2 {
     background-color: #a8a8a888;
     width: auto;
-    padding: 60px 10vw 60px 50vw;
+    padding: 60px 15vw 60px 50vw;
     line-height: 29px;
     text-align: right;
 }
@@ -486,6 +487,7 @@ body, html {
     text-align: center;
     font-size: 36px;
     margin: 50px 0px;
+    color: rgb(53, 53, 53);
 }
 
 #section-4 > p {
@@ -645,6 +647,7 @@ body, html {
     font-size: 36px;
     margin: 100px 0px 70px 0;
     min-width: 300px;
+    color: rgb(53, 53, 53);
 }
 
 .s6-description {
