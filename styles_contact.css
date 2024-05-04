@@ -1,5 +1,5 @@
 .contact-container {
-    height: calc(100vh - 270px);
+    min-height: 80vh;
     background-color: white;
     display: flex;
     flex-direction: column;
