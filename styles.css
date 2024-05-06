@@ -211,7 +211,7 @@ body, html {
     letter-spacing: 1px;
 }
 
-.subscribe-box > div {
+.subscribe-box > a {
     margin-top: 30px;
     transition: 150ms ease;
     cursor: pointer;
@@ -219,9 +219,11 @@ body, html {
     border: 2px solid #CCC;
     border-radius: 5rem;
     font-size: 16px;
+    text-decoration: none;
+    color: white;
 }
 
-.subscribe-box > div:hover {
+.subscribe-box > a:hover {
     transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(4px);
@@ -734,8 +736,13 @@ footer > p {
     text-align: center;
 }
 
-.hypertext {
+.hypertext > a {
     color: rgb(0, 183, 255);
+    text-decoration: none;
+}
+
+.hypertext > a:hover {
+    color: rgb(0, 150, 209);
 }
 
 @media (width < 700px) {

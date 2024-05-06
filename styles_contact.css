@@ -9,7 +9,7 @@
 
 .splitter {
     height: 100px;
-    width: 100vw;
+    width: 90vw;
     color: black;
     line-height: 100px;
     text-align: center;
@@ -17,7 +17,7 @@
 }
 
 .section-networks-contact {
-    width: 100vw;
+    width: calc(100vw - 20px);
     background-color: rgba(255, 166, 0, 0.144);
 
     padding: 5vh 0px 5vh 0px;

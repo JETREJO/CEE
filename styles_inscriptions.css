@@ -1,0 +1,115 @@
+.container {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.form-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 34px;
+  padding-bottom: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+select {
+  padding: 8px;
+  max-width: fit-content;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 480px;
+  width: 480px;
+}
+
+.btn-submit {
+  width: 480px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+#status-message {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.aviso {
+  border: 1px solid #ff3333;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.aviso p {
+  margin: 0;
+  color: #ff3333;
+}
+
+.contact-form-response {
+  padding: 1rem;
+  width: 400px;
+  text-align: center;
+  background-color: var(--white-color);
+}
+
+.contact-form-response svg {
+  margin-top: 2rem;
+  width: 4rem;
+  height: 4rem;
+  fill: var(--first-color);
+}
+
+.contact-form-loader {
+  text-align: center;
+  padding: 10px 0 20px 0;
+}
+
+@media (width < 600px) {
+
+  .container {
+    width: 370px;
+  }
+  
+  .form-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  select {
+    max-width: 350px;
+    width: 350px;
+  }
+
+  .btn-submit {
+    width: 350px;
+  }
+
+
+
+}
