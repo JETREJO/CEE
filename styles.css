@@ -12,6 +12,7 @@ body, html {
 :root {
     /* --HERO-IMG-01: url('./src/photos/HERO-01.jpeg'); */
     --HERO-IMG-01: url('./src/photos/PHOTO_001_Copia.jpg');
+    --HERO-IMG-02: url('./src/photos/Taller\ 001-\ Inclusion.png');
 }
 
 .montserrat-light {
