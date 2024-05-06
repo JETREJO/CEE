@@ -90,7 +90,7 @@ select {
   .container {
     width: 370px;
   }
-  
+
   .form-title {
     text-align: center;
     font-weight: 500;
@@ -110,6 +110,24 @@ select {
     width: 350px;
   }
 
+}
 
+@media (width < 420px) {
 
+  .container {
+    width: 280px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  select {
+    max-width: 260px;
+    width: 260px;
+  }
+
+  .btn-submit {
+    width: 260px;
+  }
 }
