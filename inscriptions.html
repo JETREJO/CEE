@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoría Educativa Especializada | Inscripciones</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles_inscriptions.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<header class="hero-image">
+    <img src="./src/images/banner-cee-airless.png" alt="Banner Consultoría Educativa Especializada">
+    <nav class="montserrat-bold menu">
+        <a href="./index.html">Inicio</a>
+        <a href="./index.html">Acerca</a>
+        <a href="./catalog.html">Catálogo</a>
+        <a href="./index.html">Social</a>
+        <a href="./inscriptions.html">Inscríbete</a>
+        <a href="./contact.html">Contacto</a>
+    </nav>
+    <button class="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+        </svg>
+        <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+                d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+        </svg>
+    </button>
+</header>
+
+<body>
+
+
+    <div class="container">
+
+        <h2 class="montserrat-light form-title">¡Regístrate a uno de nuestros cursos!</h2>
+
+        <form id="registro-form" action="https://formsubmit.co/inscripciones@consultoriaeducativacdmx.org" method="POST">
+
+            <div class="form-group montserrat-light" >
+                <label for="nombres">Nombre(s):</label>
+                <input type="text" id="nombres" name="nombres" required>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="apellido-paterno">Apellido Paterno:</label>
+                <input type="text" id="apellido-paterno" name="apellido-paterno" required>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="apellido-materno">Apellido Materno:</label>
+                <input type="text" id="apellido-materno" name="apellido-materno" required>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="genero">Curso o Taller a ingresar:</label>
+                <select id="genero" name="genero" required>
+                    <option value="hombre">Inclusión, atención e intervención de grupos vulnerables...
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="escuela">Escuela de Procedencia:</label>
+                <input type="text" id="escuela" name="escuela" required>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="carrera">Carrera:</label>
+                <input type="text" id="carrera" name="carrera" required>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="semestre">Semestre:</label>
+                <input type="number" id="semestre" name="semestre" required>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="grupo">Grupo:</label>
+                <input type="text" id="grupo" name="grupo" required>
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="estudiante">¿Eres estudiante?</label>
+                <input type="checkbox" id="estudiante" name="estudiante">
+            </div>
+
+            <div class="form-group montserrat-light">
+                <label for="grado-academico">Grado Académico:</label>
+                <input type="text" id="grado-academico" name="grado-academico" placeholder="Licenciatura / Maestría / Doctorado / etc">
+            </div>
+
+            <div class="aviso montserrat-light">
+                <p>
+                    <strong>¡Importante!</strong>
+                    Por favor, asegúrate de que todos los datos que ingreses en el
+                    formulario sean correctos y estén bien escritos. Los datos tal como los ingreses serán utilizados
+                    para generar tu certificado y no habrá forma de realizar modificaciones posteriores al envío del
+                    formulario.
+                </p>
+            </div>
+
+            <div class="contact-form-loader none">
+                <img src="./src/icons/loader.svg" alt="Enviando...">
+            </div>
+
+            <button type="submit" class="btn-submit montserrat-bold">Enviar</button>
+
+        </form>
+
+        <div id="status-message"></div>
+
+    </div>
+
+    <script src="./menu.js"></script>
+    <!-- <script src="./inscription_form.js"></script> -->
+
+</body>
+
+<footer>
+    <p class="montserrat-light">Consulta nuestras <i class="hypertext"><a href="./privacy.html">políticas de privacidad</a></i></p>
+    <p class="montserrat-light">© 2024 Consultoría Especializada en Educación. Todos los derechos reservados.</p>
+</footer>
+
+</html>

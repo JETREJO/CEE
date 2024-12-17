@@ -10,7 +10,9 @@ body, html {
 }
 
 :root {
-    --HERO-IMG-01: url('./src/photos/HERO-01.jpeg');
+    --HERO-IMG-01: url('./src/photos/PHOTO_001_Copia.jpg');
+    --HERO-IMG-02: url('./src/photos/Taller\ 001-\ Inclusion.png');
+    --HERO-IMG-03: url('./src/images/HERO-MAIN-003.jpg');
 }
 
 .montserrat-light {
@@ -24,6 +26,20 @@ body, html {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
+    font-style: normal;
+}
+
+.raleway-light {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.raleway-bold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -160,11 +176,12 @@ body, html {
 }
 
 .s1-img-container {
-    background-image: var(--HERO-IMG-01);
+    background-image: var(--HERO-IMG-03);
     width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     min-width: 300px;
 }
 
@@ -204,13 +221,13 @@ body, html {
 
 .subscribe-box > p {
     font-size: 24px;
-    font-weight: 500;
+    /* font-weight: 500; */
     line-height: 38px;
     padding: 0px 15vw;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
-.subscribe-box > div {
+.subscribe-box > a {
     margin-top: 30px;
     transition: 150ms ease;
     cursor: pointer;
@@ -218,9 +235,11 @@ body, html {
     border: 2px solid #CCC;
     border-radius: 5rem;
     font-size: 16px;
+    text-decoration: none;
+    color: white;
 }
 
-.subscribe-box > div:hover {
+.subscribe-box > a:hover {
     transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(4px);
@@ -237,6 +256,10 @@ body, html {
     .subscribe-box > p {
         font-size: 14px;
         line-height: 24px;
+    }
+    .subscribe-box > a {
+        border: 1px solid #CCC;
+        font-size: 12px;
     }
 }
 
@@ -369,6 +392,7 @@ body, html {
     border-radius: 0% 0% 3rem 3rem;
     background-color: #F6F7FC;
     transition: 300ms;
+    text-decoration: none;
 }
 
 .puzzle-card:hover {
@@ -733,8 +757,13 @@ footer > p {
     text-align: center;
 }
 
-.hypertext {
+.hypertext > a {
     color: rgb(0, 183, 255);
+    text-decoration: none;
+}
+
+.hypertext > a:hover {
+    color: rgb(0, 150, 209);
 }
 
 @media (width < 700px) {

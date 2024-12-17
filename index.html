@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <header class="hero-image">
@@ -15,10 +16,10 @@
     <nav class="montserrat-bold menu">
         <a href="#inicio">Inicio</a>
         <a href="#section-2">Acerca</a>
-        <a href="#section-3-ref">Servicios</a>
         <a href="#social">Social</a>
-        <a href="#">Inscríbete</a>
-        <a href="#">Contacto</a>
+        <a href="./catalog.html">Catálogo</a>
+        <a href="./inscriptions.html">Inscríbete</a>
+        <a href="./contact.html">Contacto</a>
     </nav>
     <button class="menu-btn">
         <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/></svg>
@@ -32,13 +33,13 @@
         <article class="s1-img-container">
             <div class="hero-opacity">
                 <div class="subscribe-box child-box-centered">
-                    <p class="montserrat-bold">
+                    <p class="raleway-light">
                         Innovación, creatividad y aprendizaje se unen en nuestros cursos diseñados para inspirar a
                         educadores y alumnos por igual
                     </p>
-                    <div class="montserrat-bold">
+                    <a class="montserrat-bold" href="./inscriptions.html">
                         INSCRÍBETE
-                    </div>
+                    </a>
                 </div>
             </div>
         </article>
@@ -89,18 +90,18 @@
             </div>
         </div>
         <div id="section-3-puzzle-container">
-            <div class="puzzle-card">
+            <a class="puzzle-card" href="./catalog.html">
                 <img src="./src/images/puzzle_blue-300x300.png" alt="Pieza de rompecabezas azul">
                 <p class="montserrat-bold">Seminarios</p>
-            </div>
-            <div class="puzzle-card">
+            </a>
+            <a class="puzzle-card" href="./catalog.html">
                 <img src="./src/images/puzzle_yellow-300x300.png" alt="Pieza de rompecabezas amarilla">
                 <p class="montserrat-bold">Cursos Especializados</p>
-            </div>
-            <div class="puzzle-card">
+            </a>
+            <a class="puzzle-card" href="./catalog.html">
                 <img src="./src/images/puzzle_red-300x300.png" alt="Pieza de rompecabezas roja">
                 <p class="montserrat-bold">Atención Educativa Integral</p>
-            </div>
+            </a>
         </div>
         <div class="section-3-description-2 montserrat-light">
             Impulsemos la evolución de las instituciones educativas en México por medio de la organización 
@@ -170,23 +171,27 @@
         </p>
         <div class="slideshow-container">
             <div class="mySlides fade">
-              <img src="./src/photos/PHOTO_001.jpg" style="width:100%">
+                <img src="./src/photos/PHOTO_007.jpeg" style="width:100%">
             </div>
             <div class="mySlides fade">
               <img src="./src/photos/PHOTO_004.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="./src/photos/PHOTO_006.jpeg" style="width:100%">
+                <img src="./src/photos/T002-005.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="./src/photos/PHOTO_005.jpeg" style="width:100%">
+                <img src="./src/photos/T002-010.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
                 <img src="./src/photos/PHOTO_002.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="./src/photos/PHOTO_007.jpeg" style="width:100%">
+                <img src="./src/photos/T002-009.jpg" style="width:100%">
             </div>
+            <div class="mySlides fade">
+                <img src="./src/photos/PHOTO_003.jpg" style="width:100%">
+              </div>
+
             <button class="prev">
                 <img src="./src/icons/arrow_back_ios_svg.svg" alt="">
             </button>
@@ -201,7 +206,7 @@
 </body>
 
 <footer>
-    <p class="montserrat-light">Consulta nuestras <i class="hypertext">políticas de privacidad</i> </p>
+    <p class="montserrat-light">Consulta nuestras <i class="hypertext"><a href="./privacy.html">políticas de privacidad</a></i></p>
     <p class="montserrat-light">© 2024 Consultoría Especializada en Educación. Todos los derechos reservados.</p>
 </footer>
  
